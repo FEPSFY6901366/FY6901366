@@ -110,20 +110,20 @@ Radar systems are a necessity in modern military combat aircraft, aiding the pil
 Standard array radar systems consist of multiple antenna elements, where emitted radio frequencies are emitted in phase, so that they superpose to form radar beams. Radar beams bounce off objects and create a return signal, which is detected by the receiver element of the radar array (Brain, 2024). To scan a wider angle, standard radar array systems must have the entire radar assembly mechanically rotated to point at a different angle, effectively limiting the scan speed of the radar by the mechanical system the radar system is mounted on.
 <br> <br>
 <img src="382-c0778ba27ac7990b98ea9c9aa44f1694.jpg" alt="Radar" class="imgformat">
-<p class = "capformat"> Fig.1 APG-59 radar for the F-4J Phantom II, a mechanically steered radar (Secret Projects, 2006) </p>
+<p class = "borderlim capformat"> Fig.1 APG-59 radar for the F-4J Phantom II, a mechanically steered radar (Secret Projects, 2006) </p>
 <br> <br>A Passive Electronically Scanned Array (PESA) radar system is a type of radar antenna array, in which the beam of radio waves can be electronically steered in different directions without moving the antenna array assembly. This is achieved with timing wave phases to cause constructive and destructive interference. All antenna elements are connected to a single transmitter / receiver unit. Power from the radar transmitter is passed through a module known as a phase shifter, delaying the signal through each antenna and changing the direction of the resultant beam (MathWorks, 2024).
 <br> <br>Electronically Scanned Arrays (ESA) must be multiple wavelengths across to achieve the correct gain for a narrow beamwidth, and therefore to keep ESA systems at a sensible size, the radar must operate at very high frequencies (microwave), where the wavelengths are small. (Visser, 2005; Mini-Circuits, 2023)
 <br> <br>
 <img src="Phase_Array_45deg_sweep_1000px_only_optimized.gif" alt="ESA" class="imgformat">
-<p class = "capformat"> Fig. 2 Demonstrating electronic beam steering in an ESA (Mini-Circuits, 2023) </p>
+<p class = "borderlim capformat"> Fig. 2 Demonstrating electronic beam steering in an ESA (Mini-Circuits, 2023) </p>
 <br> <br>Active Electronically Scanned Array (AESA) takes this a step further, in which multiple transmit / receive modules (T/RMs) are present on one radar assembly, allowing the radar to operate on multiple different frequencies simultaneously, as well as scan and track individual entities with each T/RM operating independently.            
 <br> <br>
 <img src="aesa-radar-696x523.jpg" alt="ESA" class="imgformat">
-<p class = "capformat"> Fig. 3 Diagram showing the advantages that an AESA has over traditional mechanically scanned radars. (Richardson, 2019) </p>
+<p class = "borderlim capformat"> Fig. 3 Diagram showing the advantages that an AESA has over traditional mechanically scanned radars. (Richardson, 2019) </p>
 <br> <br>A T/RM consists of a transmitter, receiver and antenna packed into a module, essentially acting as a scaled down PESA system with fewer antennas. Each T/RM is able generate and transmit its own independent signal at a different frequency, giving AESA systems the capability of utilising multiple simultaneous sub-beams, each individually able to search and track different angles without interfering with one another (as each T/RM is running on a separate frequency) (Leonardo UK, 2024; Real Engineering, 2023, 18:57).
 <br> <br>
 <img src="1728021254430.jpg" alt="PESA + AESA" class="imgformat">
-<p class = "capformat"> Fig. 4 PESA radar with single T/R module shared across antenna elements (left) and AESA radar with dedicated T/RMs for each antenna element (right) (MathWorks, 2024) </p>
+<p class = "borderlim capformat"> Fig. 4 PESA radar with single T/R module shared across antenna elements (left) and AESA radar with dedicated T/RMs for each antenna element (right) (MathWorks, 2024) </p>
 	</p>
     </hr>
 <!-- //////////////////////////////////////////////////////////////////////////////// -->        
@@ -138,7 +138,7 @@ Radar Warning Receivers (RWR) are defensive radar antennas which detect when an 
 <br> <br>RWRs are at an advantage against traditional radar systems, in that the RWR receives the signal at roughly half the overall distance (as the beam must reflect to the emitter). Radar intensity follows the wave intensity formula.
 <br> <br>
 <img src="intensityss2.png" alt="InvSqLawSpread" class="imgformat">
-<p class = "capformat"> Fig. 4 Showing decrease of intensity with distance. The intensity at half of distance r is squared. (Covert Cabal, 2019, 6:13) </p>
+<p class = "borderlim capformat"> Fig. 4 Showing decrease of intensity with distance. The intensity at half of distance r is squared. (Covert Cabal, 2019, 6:13) </p>
 <br> <br>The RWR however does not initially know the original direction the signal is coming from and must therefore filter the signal over background radio spectrum noise. This is achieved by integrating over a short period of time, which makes periodic radar sources add up and stand out.
 <br> <br>This method does not work as well regarding AESA radar, since ESA radars can change their frequency randomly with each individual beam pulse. Integrating over time is useless against a constantly changing frequency, as it will not stand out over background noise. Advanced ESA radars can also control the repetition and duration of the pulse as well as its peak power, making it even harder to detect. Older, and even a few modern RWRs are therefore unable to detect AESA radar systems. (Cluett, 2023; Covert Cabal, 2019)
         </p>
